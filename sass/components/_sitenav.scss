@@ -1,0 +1,42 @@
+.site-nav {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__link {
+    color: $title-text-color;
+    text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link--current {
+    position: relative;
+    color: $site-current-page-color;
+  }
+
+  &__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    border: 2px solid $site-current-page-color;
+    border-radius: 2px;
+    background-color: $site-current-page-color;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $focus-hover-color;
+  }
+}
