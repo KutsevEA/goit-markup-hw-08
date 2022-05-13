@@ -21,10 +21,6 @@ body {
   text-decoration: none;
 }
 
-header {
-  border-bottom: 1px solid $main-borders-color;
-}
-
 .footer {
   background-color: $footer-bgc-color;
   padding-top: 60px;
@@ -86,11 +82,6 @@ header {
 
   &--TextCenter {
     text-align: center;
-  }
-
-  &--flex {
-    display: flex;
-    align-items: center;
   }
 }
 

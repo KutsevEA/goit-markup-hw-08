@@ -23,10 +23,6 @@ body {
   text-decoration: none;
 }
 
-header {
-  border-bottom: 1px solid #ececec;
-}
-
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -91,15 +87,6 @@ header {
   text-align: center;
 }
 
-.container--flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -133,6 +120,19 @@ header {
   pointer-events: none;
   -webkit-transform: scale(0);
           transform: scale(0);
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .checkbox {
@@ -1020,36 +1020,4 @@ header {
   color: #fff;
   text-transform: uppercase;
 }
-
-.what-we-do {
-  position: relative;
-}
-
-.what-we-do__bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 370px;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  bottom: 0;
-}
-
-.what-we-do__text {
-  margin: 0;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-}
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=mail.css.map */
