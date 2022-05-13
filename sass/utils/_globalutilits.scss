@@ -21,12 +21,6 @@ body {
   text-decoration: none;
 }
 
-.footer {
-  background-color: $footer-bgc-color;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -49,18 +43,6 @@ body {
   margin: 0;
 }
 
-.topic {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-
-  color: $title-text-color;
-  margin-top: 0;
-}
-
 .hidden-topic {
   position: absolute;
   width: 1px;
@@ -79,32 +61,11 @@ body {
   margin-right: auto;
   width: 1200px;
   padding: 0 15px;
-
-  &--TextCenter {
-    text-align: center;
-  }
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section--paddingTop {
-  padding-top: 0;
-}
-
-.section--grey {
-  background-color: $secondari-bgc-color;
 }
 
 .flex-box {
   display: flex;
   justify-content: space-between;
-}
-
-.flex-box--wrap {
-  flex-wrap: wrap;
 }
 
 .is-hidden {

@@ -1,4 +1,7 @@
 .client {
+  display: flex;
+  justify-content: space-between;
+
   &__link {
     display: flex;
     fill: $client-icon-main-color;

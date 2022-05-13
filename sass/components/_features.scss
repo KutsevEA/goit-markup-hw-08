@@ -1,7 +1,13 @@
 .features {
-  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-  &__IconBox {
+  &__item {
+    width: 270px;
+  }
+
+  &__box {
     display: flex;
     background-color: $secondari-bgc-color;
     width: 270px;
