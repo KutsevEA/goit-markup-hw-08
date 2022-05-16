@@ -1,0 +1,46 @@
+.mobile-menu {
+  display: none;
+
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  min-height: 796px;
+
+  padding: 48px 40px;
+
+  background: $main-bgc-color;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 998;
+  }
+
+  &__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__buttonIco {
+    z-index: 999;
+    background-color: red;
+  }
+
+  &__icoClose {
+    display: none;
+  }
+
+  &__button.is-open &__icoClose {
+    display: block;
+  }
+  &__button.is-open &__icoMenu {
+    display: none;
+  }
+}

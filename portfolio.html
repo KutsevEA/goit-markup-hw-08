@@ -14,68 +14,125 @@
 </head>
 <body>
     <header class="header">
-
-    <div class="container header__conteiner">
-        <nav class="logo-nav-box">
+    
+        <div class="container header__conteiner">
+    
             <a href="./index.html" class="logo logo__header">
                 <span class="logo__part">Web</span>Studio
             </a>
-            <ul class="site-nav list">
-                <li class="site-nav__item"> <a href="./index.html" class="site-nav__link">Студия</a></li>
-                <li class="site-nav__item"> <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
-                <li class="site-nav__item"> <a href="" class="site-nav__link">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <ul class="header-contacts list">
-            <li class="header-contacts__item">
-                <a href="maito:info@devstudio.com" class="header-contacts__link">
-                    <svg class="header-contacts__mailIcon">
-                        <use href="./images/sprite.svg#icon-envelope"></use>
-                    </svg>
-                    info@devstudio.com
-                </a>
-            </li>
-            <li class="header-contacts__item">
-                <a href="tel:+380961111111" class="header-contacts__link">
-                    <svg class="header-contacts__telIcon">
-                        <use href="./images/sprite.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </li>
-        </ul>
-    </div>
-
-
+    
+            <button type="button" class="mobile-menu__button" data-menu-button aria-expanded="false">
+                <svg class="mobile-menu__buttonIco" width='40' height='40' aria-label="Переключатель мобильного меню">
+                    <use class="mobile-menu__icoMenu" href="./images/sprite.svg#mobile-menu"></use>
+                    <use class="mobile-menu__icoClose" href="./images/sprite.svg#mobile-close"></use>
+                </svg>
+            </button>
+    
+            <div class="mobile-menu" data-menu>
+    
+                <nav>
+                    <ul class="site-nav list">
+    
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="site-nav__link">Студия</a>
+                        </li>
+    
+                        <li class="site-nav__item">
+                            <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
+                        </li>
+    
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link">Контакты</a>
+                        </li>
+    
+                    </ul>
+                </nav>
+    
+                <ul class="header-contacts list">
+    
+                    <li class="header-contacts__item">
+                        <ul class="header-social list">
+    
+                            <li class="header-social__item">
+                                <a href="" class="header-social__link">Instagram</a>
+                            </li>
+    
+                            <li class="header-social__item">
+                                <a href="" class="header-social__link">Twitter</a>
+                            </li>
+    
+                            <li class="header-social__item">
+                                <a href="" class="header-social__link">Facebook</a>
+                            </li>
+    
+                            <li class="header-social__item">
+                                <a href="" class="header-social__link">LinkedIn</a>
+                            </li>
+    
+                        </ul>
+                    </li>
+    
+                    <li class="header-contacts__item">
+                        <a href="maito:info@devstudio.com" class="header-contacts__link">
+                            <svg class="header-contacts__mailIcon">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+    
+                    <li class="header-contacts__item">
+                        <a href="tel:+380961111111" class="header-contacts__link header-contacts__link--akcent">
+                            <svg class="header-contacts__telIcon">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+    
+                </ul>
+    
+    
+            </div>
+    
+    
+        </div>
+    
+    
     </header>
     <main>
         <section class="section">
             <div class="container">
                 <h1 class="hidden-topic">Фильтр страницы портфолио</h1>
+
                 <ul class="filters-list list">
-                    <li class="secondary-button">
-                        <button type=button class="secondary-button__button"> Все </button>
+                    <li class="filters-list__item">
+                        <button type=button class="filters-list__button"> Все </button>
                     </li>
-                    <li class="secondary-button">
-                        <button type=button class="secondary-button__button"> Веб-сайты </button>
+                    <li class="filters-list__item">
+                        <button type=button class="filters-list__button"> Веб-сайты </button>
                     </li>
-                    <li class="secondary-button">
-                        <button type=button class="secondary-button__button"> Приложения </button>
+                    <li class="filters-list__item">
+                        <button type=button class="filters-list__button"> Приложения </button>
                     </li>
-                    <li class="secondary-button">
-                        <button type=button class="secondary-button__button"> Дизайн </button>
+                    <li class="filters-list__item">
+                        <button type=button class="filters-list__button"> Дизайн </button>
                     </li>
-                    <li class="secondary-button">
-                        <button type=button class="secondary-button__button"> Маркетинг </button>
+                    <li class="filters-list__item">
+                        <button type=button class="filters-list__button"> Маркетинг </button>
                     </li>
                 </ul>
 
-                <ul class="portfolio-list list">
-                    <li class="portfolio">
+                <ul class="portfolio list">
+                    <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__thumb">
-                                <img width="370" src="images/exempl-1.jpg" alt="leptop">
+                                <img 
+                                sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                                srcset="./images/Mobile-images/exempl-1.jpg 450w,
+                                 ./images/Mobile-images/exempl-1-2x.jpg 900w" 
+                                src="./images/Mobile-images/exempl-1.jpg" 
+                                alt="leptop">
                                 <div class="portfolio__modal">
                                     <p class="portfolio__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -91,10 +148,15 @@
                         </a>
                     </li>
 
-                    <li class="portfolio">
+                    <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__thumb">
-                                <img width="370" src="images/exempl-2.jpg" alt="basketball poster">
+                                <img 
+                                sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                                srcset="./images/Mobile-images/exempl-2.jpg 450w,
+                                 ./images/Mobile-images/exempl-2-2x.jpg 900w" 
+                                src="./images/Mobile-images/exempl-2.jpg" 
+                                alt="basketball poster">
                                 <div class="portfolio__modal">
                                     <p class="portfolio__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
@@ -109,10 +171,15 @@
                         </a>
                     </li>
 
-                    <li class="portfolio">
+                    <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__thumb">
-                                <img width="370" src="images/exempl-3.jpg" alt="restaurant logo">
+                                <img 
+                                sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw" 
+                                srcset="./images/Mobile-images/exempl-3.jpg 450w,
+                                 ./images/Mobile-images/exempl-3-2x.jpg 900w"
+                                src="./images/Mobile-images/exempl-3.jpg" 
+                                alt="restaurant logo">
                                 <div class="portfolio__modal">
                                     <p class="portfolio__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -128,10 +195,15 @@
                         </a>
                     </li>
 
-                    <li class="portfolio">
+                    <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__thumb">
-                                <img width="370" src="images/exempl-4.jpg" alt="headset">
+                                <img 
+                                sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw" 
+                                srcset="./images/Mobile-images/exempl-4.jpg 450w,
+                                 ./images/Mobile-images/exempl-4-2x.jpg 900w"
+                                src="./images/Mobile-images/exempl-4.jpg" 
+                                alt="headset">
                                 <div class="portfolio__modal">
                                     <p class="portfolio__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -147,10 +219,15 @@
                         </a>
                     </li>
 
-                    <li class="portfolio">
+                    <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__thumb">
-                                <img width="370" src="images/exempl-5.jpg" alt="paper box">
+                                <img 
+                                sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw" 
+                                srcset="./images/Mobile-images/exempl-5.jpg 450w,
+                                 ./images/Mobile-images/exempl-5-2x.jpg 900w"
+                                src="./images/Mobile-images/exempl-5.jpg" 
+                                alt="paper box">
                                 <div class="portfolio__modal">
                                     <p class="portfolio__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -166,10 +243,15 @@
                         </a>
                     </li>
 
-                    <li class="portfolio">
+                    <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__thumb">
-                                <img width="370" src="images/exempl-6.jpg" alt="monitor">
+                                <img 
+                                sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw" 
+                                srcset="./images/Mobile-images/exempl-6.jpg 450w,
+                                 ./images/Mobile-images/exempl-6-2x.jpg 900w"
+                                src="./images/Mobile-images/exempl-6.jpg" 
+                                alt="monitor">
                                 <div class="portfolio__modal">
                                     <p class="portfolio__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -185,10 +267,15 @@
                         </a>
                     </li>
 
-                    <li class="portfolio">
+                    <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__thumb">
-                                <img width="370" src="images/exempl-7.jpg" alt="magazin">
+                                <img 
+                                sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
+                                srcset="./images/Mobile-images/exempl-7.jpg 450w,
+                                 ./images/Mobile-images/exempl-7-2x.jpg 900w" 
+                                src="./images/Mobile-images/exempl-7.jpg" 
+                                alt="magazin">
                                 <div class="portfolio__modal">
                                     <p class="portfolio__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -204,10 +291,15 @@
                         </a>
                     </li>
 
-                    <li class="portfolio">
+                    <li class="portfolio__item">
                         <a class="portfolio__link" href=""> 
                             <div class="portfolio__thumb">
-                                <img width="370" src="images/exempl-8.jpg" alt="label">
+                                <img 
+                                sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw" 
+                                srcset="./images/Mobile-images/exempl-8.jpg 450w,
+                                 ./images/Mobile-images/exempl-8-2x.jpg 900w"
+                                src="./images/Mobile-images/exempl-8.jpg" 
+                                alt="label">
                                 <div class="portfolio__modal">
                                     <p class="portfolio__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -223,10 +315,15 @@
                         </a>
                     </li>
 
-                    <li class="portfolio">
+                    <li class="portfolio__item">
                         <a class="portfolio__link" href="">
                             <div class="portfolio__thumb">
-                                <img width="370" src="images/exempl-9.jpg" alt="notebook">
+                                <img 
+                                sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw" 
+                                srcset="./images/Mobile-images/exempl-9.jpg 450w,
+                                 ./images/Mobile-images/exempl-9-2x.jpg 900w"
+                                src="./images/Mobile-images/exempl-9.jpg" 
+                                alt="notebook">
                                 <div class="portfolio__modal">
                                     <p class="portfolio__description">
                                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
@@ -249,30 +346,30 @@
         
     </main>
     <footer class="footer">
-        <div class="container footer__container">
-            <div class="logo-address-box">
-                <a href="./index.html" class="logo logo__footer">
-                    <span class="logo__part">Web</span>Studio
-                </a>
-                <address>
-                    <ul class="contact-list list">
-                        <li class="contact">
-                            <a href="https://goo.gl/maps/RLkWnAHmGfpUnPQ57" class="contact__item contact__item--white">
-                                г. Киев, пр-т Леси Украинки, 26
-                            </a>
-                        </li>
-                        <li class="contact">
-                            <a href="mailto:info@example.com" class="contact__item">info@example.com</a>
-                        </li>
-                        <li class="contact">
-                            <a href="tel:+380991111111" class="contact__item">+38 099 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
+        <div class="container">
     
-            <div class="footer-soxial-link-box">
-                <h3 class="footer-social-link-text">присоединяйтесь</h3>
+            <a href="./index.html" class="logo logo__footer">
+                <span class="logo__part">Web</span>Studio
+            </a>
+    
+            <address>
+                <ul class="contact list">
+                    <li class="contact__item">
+                        <a href="https://goo.gl/maps/RLkWnAHmGfpUnPQ57" class="contact__link contact__link--white">
+                            г. Киев, пр-т Леси Украинки, 26
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="mailto:info@example.com" class="contact__link">info@example.com</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="tel:+380991111111" class="contact__link">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+    
+            <div class="footer-social-box">
+                <h3 class="social-list__title ">присоединяйтесь</h3>
                 <ul class="social-list list">
                     <li class="social-list__item">
                         <a class="social-list__link social-list__link--color" href="#">
@@ -305,12 +402,12 @@
                 </ul>
             </div>
     
-            <div class="footer-subscription">
+            <div class="subscription">
                 <form>
                     <label for="email">
-                        <h3 class="footer-subscription__title">подпишитесь на рассылку</h3>
+                        <h3 class="subscription__title">подпишитесь на рассылку</h3>
                     </label>
-                    <div class="subscription">
+                    <div class="subscription__box">
                         <input class="subscription__input" type="email" name="user-email" id="email" placeholder="E-mail">
                         <button class="primary-button primary-button--margin" type="submit">Подписаться
                             <svg class="subscription__icon">
@@ -323,5 +420,6 @@
     
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+.site-nav {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+
+  &__item {
+    padding: 16px 0px;
+  }
+
+  &__item:first-child {
+    padding-top: 0;
+  }
+
+  &__item:last-child {
+    padding-bottom: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $title-text-color;
+  }
+
+  &__link--current {
+    color: $focus-hover-color;
+  }
+}
