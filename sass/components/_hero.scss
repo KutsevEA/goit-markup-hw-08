@@ -16,9 +16,27 @@
 
   text-align: center;
 
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+
+    background-image: url(../images/Tablet-images/hero-background-img.jpg);
+    background-size: 768px 400px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/Tablet-images/hero-background-img-2x.jpg);
+    }
+  }
+
   &__title {
+    display: inline-block;
+
     margin-top: 0;
     margin-bottom: 30px;
+
+    max-width: 360px;
 
     color: $button-text-primary-color;
 

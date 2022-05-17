@@ -1,7 +1,11 @@
 .features {
+  justify-content: space-between;
+
   &__box {
     display: flex;
     justify-content: center;
+    height: 120px;
+    align-items: center;
 
     background-color: $secondari-bgc-color;
   }
@@ -24,8 +28,24 @@
   }
 
   &__text {
+    margin: 0;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      margin: 0;
+      width: calc((100% - 2 * 30px) / 2);
+    }
   }
 }
