@@ -523,7 +523,7 @@ body {
   color: #212121;
 }
 
-.site-nav__linkhover, .site-nav__linkfocus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
 }
 
@@ -1091,6 +1091,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
+}
+
+.contact__link:hover, .contact__link:focus {
+  color: #2196f3;
 }
 
 .contact__link--white {
