@@ -3,4 +3,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
+
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }

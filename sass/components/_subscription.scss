@@ -11,11 +11,15 @@
 
     text-transform: uppercase;
 
-    color: #ffffff;
+    color: $button-text-primary-color;
   }
 
   &__box {
     margin-top: 20px;
+
+    @media screen and (min-width: 1600px) {
+      display: flex;
+    }
   }
 
   &__input {
@@ -33,6 +37,10 @@
     @media screen and (min-width: 768px) {
       min-width: 450px;
     }
+
+    @media screen and (min-width: 1600px) {
+      min-width: 358px;
+    }
   }
 
   &__input::placeholder {
@@ -43,5 +51,9 @@
     margin-left: 10px;
     width: 24px;
     height: 24px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin: 0 0 0 93px;
   }
 }

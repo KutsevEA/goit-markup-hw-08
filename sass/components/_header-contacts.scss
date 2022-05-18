@@ -13,20 +13,39 @@
     margin-left: 84px;
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    &__item:last-child {
-      margin-top: 10px;
+    @media screen and (max-width: 1599px) {
+      &__item:last-child {
+        margin-top: 10px;
+      }
     }
 
-    &__mailIcon,
+    &__mailIcon {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+      fill: currentColor;
+    }
+
     &__telIcon {
       width: 10px;
       height: 16px;
       margin-right: 10px;
       fill: currentColor;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    align-items: center;
+    flex-direction: unset;
+    font-size: 14px;
+    margin: 0;
+
+    &__item:nth-last-child(2) {
+      margin-right: 50px;
     }
   }
 
