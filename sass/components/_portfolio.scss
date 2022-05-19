@@ -22,6 +22,12 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
   &__thumb {
     overflow: hidden;
     position: relative;

@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 998;
+    z-index: 997;
   }
 
   &__button {
@@ -38,8 +38,7 @@
   }
 
   &__buttonIco {
-    z-index: 999;
-    background-color: red;
+    z-index: 998;
   }
 
   &__icoClose {
