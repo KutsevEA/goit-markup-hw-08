@@ -90,6 +90,16 @@ body {
   &--secondariBg {
     background-color: $secondari-bgc-color;
   }
+
+  @media screen and (min-width: 1600px) {
+    padding: 94px 0;
+  }
+
+  &--noPaddingTop {
+    @media screen and (min-width: 1600px) {
+      padding-top: 0;
+    }
+  }
 }
 
 .is-hidden {
