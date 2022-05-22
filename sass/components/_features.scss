@@ -1,6 +1,8 @@
 .features {
   justify-content: space-between;
 
+  gap: 30px;
+
   &__box {
     display: flex;
     justify-content: center;
@@ -14,7 +16,11 @@
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   &__title {
@@ -52,14 +58,13 @@
     flex-wrap: wrap;
 
     &__item {
-      margin: 0;
-      width: calc((100% - 2 * 30px) / 2);
+      max-width: 354px;
     }
   }
 
   @media screen and (min-width: 768px) {
     &__item {
-      width: calc((100% - 4 * 30px) / 4);
+      max-width: 270px;
     }
   }
 }

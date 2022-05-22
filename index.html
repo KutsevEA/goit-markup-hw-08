@@ -210,11 +210,18 @@
                 <ul class="team list">
                     <li class="team__item">
                         
-                            <img class="team__img"
-                            sizes="(min-width:1200px) 30vw, (min-width:768px) 40vw, (min-width:480px) 90vw"
-                            srcset="./images/Mobile-images/img.jpg 450w, ./images/Mobile-images/img-2x.jpg 900w"  
-                            src="./images/Mobile-images/img.jpg" 
-                            alt="foto Igor Demyanenko">
+                        <picture>
+                            <source srcset="./images/Mobile-images/img.jpg 1x, ./images/Mobile-images/img-2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                            <source srcset="./images/Tablet-images/img.jpg 1x, ./images/Tablet-images/img-2x.jpg 2x"
+                                    media="(max-width: 1199px)">
+                            <source srcset="./images/img.jpg 1x, ./images/img-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                                    
+                             <img class="team__img" src="./images/img.jpg"  alt="foto Igor Demyanenko">
+                        </picture>
+
+                           
                             <div class="team__caption">
                                 <h3 class="team__name">Игорь Демьяненко</h3>
                                 <p class="team__title">Product Designer</p>
@@ -255,11 +262,15 @@
                     </li>
                     <li class="team__item">
                         
-                            <img class="team__img"
-                            sizes="(min-width:1200px) 30vw, (min-width:768px) 40vw, (min-width:480px) 90vw"
-                            srcset="./images/Mobile-images/img-2.jpg 450w, ./images/Mobile-images/img-2-2x.jpg 900w"   
-                            src="./images/Mobile-images/img-2.jpg" 
-                            alt="foto Olga Repina">
+                            <picture>
+                                <source srcset="./images/Mobile-images/img-2.jpg 1x, ./images/Mobile-images/img-2-2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/Tablet-images/img-2.jpg 1x, ./images/Tablet-images/img-2-2x.jpg 2x"
+                                    media="(max-width: 1199px)">
+                                <source srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x" media="(min-width: 1200px)">
+                            
+                                <img class="team__img" src="./images/img-2.jpg" alt="foto Olga Repina">
+                            </picture>
+                            
                             <div class="team__caption">
                                 <h3 class="team__name">Ольга Репина</h3>
                                 <p class="team__title list">Frontend Developer</p>
@@ -299,11 +310,16 @@
                     </li>
                     <li class="team__item">
                         
-                            <img class="team__img"
-                            sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
-                            srcset="./images/Mobile-images/img-3.jpg 450w, ./images/Mobile-images/img-3-2x.jpg 900w" 
-                            src="./images/Mobile-images/img-3.jpg" 
-                            alt="foto Nikola Tarasov">
+                            <picture>
+                                <source srcset="./images/Mobile-images/img-3.jpg 1x, ./images/Mobile-images/img-3-2x.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <source srcset="./images/Tablet-images/img-3.jpg 1x, ./images/Tablet-images/img-3-2x.jpg 2x"
+                                    media="(max-width: 1199px)">
+                                <source srcset="./images/img-3.jpg 1x, ./images/img-3-2x.jpg 2x" media="(min-width: 1200px)">
+                            
+                                <img class="team__img" src="./images/img-3.jpg" alt="foto Nikola Tarasov">
+                            </picture>
+                            
                             <div class="team__caption">
                                 <h3 class="team__name">Николай Тарасов</h3>
                                 <p class="team__title list">Marketing</p>
@@ -342,11 +358,16 @@
                     </li>
                     <li class="team__item">
                         
-                            <img class="team__img"
-                            sizes="(min-width:1200px) 33vw, (min-width:768px) 50vw, (min-width:480px) 100vw"
-                            srcset="./images/Mobile-images/img-4.jpg 450w, ./images/Mobile-images/img-4-2x.jpg 900w" 
-                            src="./images/Mobile-images/img-4.jpg" 
-                            alt="foto Mihael Ermakov">
+                        <picture>
+                            <source srcset="./images/Mobile-images/img-4.jpg 1x, ./images/Mobile-images/img-4-2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <source srcset="./images/Tablet-images/img-4.jpg 1x, ./images/Tablet-images/img-4-2x.jpg 2x"
+                                media="(max-width: 1199px)">
+                            <source srcset="./images/img-4.jpg 1x, ./images/img-4-2x.jpg 2x" media="(min-width: 1200px)">
+                        
+                            <img class="team__img" src="./images/img-4.jpg" alt="foto Mihael Ermakov">
+                        </picture>
+                            
                             <div class="team__caption">
                                     <h3 class="team__name">Михаил Ермаков</h3>
                                     <p class="team__title list">UI Designer</p>
@@ -506,11 +527,10 @@
 
             <div class="subscription">
                 <form>
-                    <label for="email">
-                        <h3 class="subscription__title">подпишитесь на рассылку</h3>
-                    </label>
+                    <h3 class="subscription__title">подпишитесь на рассылку</h3>
+                    
                     <div class="subscription__box">
-                        <input class="subscription__input" type="email" name="user-email" id="email" placeholder="E-mail">
+                        <input class="subscription__input" type="email" name="user-email" placeholder="E-mail">
                         <button class="primary-button primary-button--margin" type="submit">Подписаться
                             <svg class="subscription__icon">
                                 <use href="./images/sprite.svg#icon-isend"></use>
@@ -536,7 +556,7 @@
                
                 <div class="modal__inputbox">
                     <label for="name">Имя</label>
-                    <input class="modal__input" type="text" name="name" id="name" autocomplete="none">
+                    <input class="modal__input" type="text" name="name" id="name">
                     <svg class="modal__inputicon">
                         <use href="./images/sprite.svg#icon-person"></use>
                     </svg>
@@ -566,9 +586,9 @@
                 <div class="modal__policy">
                     
                     <label class="checkbox">
-                        <input class="checkbox__box" type="checkbox" name="" value="policy">
-                        <span class="checkbox__icon"></span>
-                        Соглашаюсь с рассылкой и принимаю&nbsp
+                        <input class="checkbox__box" type="checkbox" name="checkbox" value="policy">
+                    
+                        Соглашаюсь с рассылкой и принимаю 
                         <a class="modal__policylink" href="#">Условия договора</a></label>
                 </div>
                 

@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  border-bottom: 1px solid $main-borders-color;
 
   &__conteiner {
     display: flex;
@@ -16,6 +17,5 @@
 
   @media screen and (min-width: 768px) {
     min-height: 80px;
-    border-bottom: 1px solid $main-borders-color;
   }
 }

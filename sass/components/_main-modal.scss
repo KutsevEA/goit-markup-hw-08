@@ -22,8 +22,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 450px;
-  min-height: 609px;
+  width: calc(100% - 30px);
+  max-width: 450px;
   background-color: #fff;
   padding: 40px 40px;
 

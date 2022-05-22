@@ -3,39 +3,52 @@
   margin-left: auto;
   margin-right: auto;
 
-  max-width: 480px;
   height: 400px;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: center;
 
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: url(../images/Mobile-images/hero-background-img.jpg);
-  background-size: 480px 400px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Mobile-images/hero-background-img.jpg);
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
-      background-image: url("../images/Mobile-images/hero-background-img-2x.jpg");
-    }
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/Mobile-images/hero-background-img-2x.jpg");
   }
 
-  text-align: center;
-
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-
-    background-image: url(../images/Tablet-images/hero-background-img.jpg);
-    background-size: 768px 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Tablet-images/hero-background-img.jpg);
+    background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/Tablet-images/hero-background-img-2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Tablet-images/hero-background-img-2x.jpg);
     }
   }
 
@@ -58,7 +71,12 @@
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero-background-img-2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-background-img-2x.jpg);
     }
   }
 
